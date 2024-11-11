@@ -32,9 +32,14 @@ For Cancellation Prediction Model: The target variable for this model was CANCEL
 For Arrival Delay Prediction Model: The target variable was ARR_DELAY, which represents the arrival delay in minutes. This model used the same feature set as the cancellation model and aimed to predict the delay time for non-canceled flights.
 
 ## Shiny App
-The repository includes a Shiny web app that allows users to input their flight date, flight number, departing airport, arrival airport, and operating flight number. User will receive real-time predictions of whether their flight is likely to be canceled, and if not, the estimated arrival time. The app uses trained models for prediction. The app also shows an interactive map, great circle distance and weather information(if available). The Shiny app is also deployed to an online platform and can be accessed here:
-[https://connect.posit.cloud/szhang655/content/0193176a-818a-32e5-37d9-ca920e9e3bf6]
+The repository includes a Shiny web app that allows users to input their flight date, flight number, departing airport, arrival airport, and operating flight number. User will receive real-time predictions of whether their flight is likely to be canceled, and if not, the estimated arrival time. If the user is retrieving predictions for past dates, the system will also look for historical weather and use for prediction if found. The app uses trained models for prediction. The app also shows an interactive map, great circle distance and weather information(if available). To run this shiny app, download all files in the shiny folder and type in the command line:
+  ```bash
+  shiny run --app-dir /path-to-your-folder
+  ```
 
+The Shiny app is also deployed to an online platform and can be accessed here:
+[https://connect.posit.cloud/szhang655/content/0193176a-818a-32e5-37d9-ca920e9e3bf6]
+Please note that historical weather data feature is not supported by the online version, the source for the online version is [https://github.com/szhang655/FlightSchedulePredictionShiny.git].
 
 
 ## Contact
