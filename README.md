@@ -18,7 +18,7 @@ This project aims to analyze historical flight and weather data to predict fligh
 - `data/`: Contains the raw and cleaned datasets used in the analysis.
 - `code/`: Includes all codes used for data cleaning, analysis, and model building.
 - `plots/`: Stores plots and visualizations generated during the analysis.
-- `shiny_app/`: The code for the Shiny app, allowing real-time body fat predictions.
+- `shiny/`: The code for the Shiny app, allowing real-time body fat predictions.
   
 ## Additional Resources
 
