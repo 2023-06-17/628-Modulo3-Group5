@@ -22,11 +22,13 @@ This project aims to analyze historical flight and weather data to predict fligh
   
 ## Additional Resources
 
-Due to the structure of this repo and upload limit for certain files, some other files are stored in our shared drive, including initial weather data, flight data, some merged datasets and lots of helper code. Feel free to request access to our shared drives to check out.
+Due to the structure of this repo and the upload limit for certain files on GitHub, some other files are stored in our shared drive, including initial weather data, flight data, some merged datasets, and lots of other helper code files. Feel free to request access to our shared drives to check out.
 
 ## Statistical Analysis
 The prediction task was divided into two primary models: one for predicting flight cancellations (binary classification) and another for predicting arrival delay times (regression). Both models used XGBoost due to its efficiency with large datasets, ability to handle data imbalance, and support for feature importance analysis. 
+
 For Cancellation Prediction Model: The target variable for this model was CANCELLED, where 0 represents non-canceled flights, and 1 represents canceled flights. Predictive features included various categorical variables, which were encoded, and numeric variables such as weather and time-based metrics. 
+
 For Arrival Delay Prediction Model: The target variable was ARR_DELAY, which represents the arrival delay in minutes. This model used the same feature set as the cancellation model and aimed to predict the delay time for non-canceled flights.
 
 ## Shiny App
