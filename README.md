@@ -23,6 +23,10 @@ This project aims to analyze historical flight and weather data to predict fligh
 ## Additional Resources
 
 Due to the structure of this repo and the upload limit for certain files on GitHub, some other files are stored in our shared drive, including initial weather data, flight data, some merged datasets, and lots of other helper code files. Feel free to request access to our shared drives to check out.
+[https://drive.google.com/drive/folders/0AOnlxgAvrj23Uk9PVA] - main drive
+[https://drive.google.com/drive/folders/0APEShnaw2EpMUk9PVA] - backup1 drive 
+[https://drive.google.com/drive/folders/0AK6d3vWligJlUk9PVA] - backup2 drive
+
 
 ## Statistical Analysis
 The prediction task was divided into two primary models: one for predicting flight cancellations (binary classification) and another for predicting arrival delay times (regression). Both models used XGBoost due to its efficiency with large datasets, ability to handle data imbalance, and support for feature importance analysis. 
